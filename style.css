@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+.loader{
+    background-color:rgb(72, 71, 71);
+    height: 100vh;
+    width: 100%;
+    z-index:4 ;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    width: 88px;
+    overflow: hidden;
+}
+.loader img{
+    width: 300px;
+    clip-path: 0 ,50px, 100%, -50px, 0;
+}
+
+.loader-conteiner{
+   background-color: rgb(255, 255, 255);
+   height: 10px;
+   width: 200px;
+   border-radius: 10px;
+}
+.loading{
+    background-color:#00add0;
+    height: 10px;
+    border-radius: 10px;
+
+}
+
+.loader h5{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+
+}
+/* ################################################################################################### */
+
+.heder-p1{
+    height:90px ;
+    display: flex;
+    margin: 0 20px;
+    align-items: center;
+    border-bottom: 1px solid #00add0 ;
+
+}
+.heder-p1-logo{
+    width: 300px;
+    padding: 10px;
+    border-right: 1px solid #39404a16;
+
+}
+.heder-p1-logo img{
+    width: 250px;
+}
+.heder-p1-menu_list{
+    height: 100%;
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+}
+.item{
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+
+}
+
+.heder-p1-menu_list .item:hover{
+    color: #00add0;
+    user-select: none;
+    cursor: pointer;
+    background:linear-gradient(to top,#00add02d 5% , rgba(255,255,255,0.7847514005602241) 10% );
+}
+
+.support_btn{
+    background-color: #39404a;
+    color: #00add0;
+    height: 35px;
+    width: 150px;
+    margin-left: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+}
+
+.support_btn:hover{
+    background-color: #ff6900;
+    color: #191970;
+    font-weight:bold;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+}
+/* ################################################################################################### */
+
+.slid-section{
+    height: 565px;
+    margin: 20px 50px;
+    display: flex;
+    flex-direction: row;
+}
+.slid-section-img{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.slid-section-img img{
+    width: 100%;
+    max-height:550px ;
+}
+.slid-section-describtion{
+    width: 30%;
+    padding: 20px;
+    text-align: justify;
+}
+.slid-section-describtion h3{
+    color: #00add0;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.slid-section-img-dis{
+    color: white;
+    width: 35%;
+    z-index: 3;
+    position: absolute;
+    top:80px;
+    left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.slid-section-describtion-title{
+    background-color: #00add067;
+    border: 2px solid white;
+    width: auto;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.slid-section-describtion-discribtion{
+    background-color: #39404a69;
+    margin-top: 30px;
+    padding: 10px 20px;
+    line-height: 25px;
+    text-align: justify;
+    position: relative;
+}
+
+.more-btn{
+    background-color: #00add0;
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    text-align: center;
+}
+
+.more-btn:hover{
+    background-color:#ff6900;
+}
+/* ################################################################################################### */
+.about-datamine{
+    background: linear-gradient(to left,rgba(121, 119, 119, 0.459) 0%,rgb(255, 255, 255) 100%
+    );
+    height: 600px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-datamine-left{
+    height: 500px;
+    width: 550px;
+}
+.about-datamine-left h4{
+    color: #00add0;
+    letter-spacing:3px ;
+    font-weight: lighter;
+    font-size: 25px;
+    margin-bottom: 30px;
+
+}
+.about-datamine-left h1{
+    color: #364d62;
+}
+.about-datamine-btn{
+    background-color: #ff6900;
+    width: 300px;
+    padding: 10px 20px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 10px 0px rgb(105, 104, 104) ;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.5s;
+}
+.about-datamine-btn:hover{
+   background-color: #00add0; 
+}
+.about-datamine-right img{
+    width: 600px;
+}
+/* ################################################################################################### */
+.clients{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clients-title{
+    text-align: center;
+}
+.clients-title h1{
+    color: #364d62;
+    font-size: 60px;
+    font-weight: lighter;
+}
+.clients-title h5{
+    color: #ff6900;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight:lighter;
+    letter-spacing:1px  ;
+}
+.clients-logo-section{
+    /* background-color: rgb(52, 186, 135);  */
+    height: 100px;
+    width: 900px;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.clients-logo-section img{
+    width: 100px;
+    height:auto;
+    /* max-width: 100px; */
+    /* max-height: 90px; */
+    position: absolute;
+}
+/* ################################################################################################### */
+.ourservices{
+    height: 800px;
+    background-image:url(images/supportDatamine.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.pp{
+    background-color: gray;
+    width: 100%;
+    height: 900px;
+}
